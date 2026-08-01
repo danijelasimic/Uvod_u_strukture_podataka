@@ -1,6 +1,6 @@
 # Uvod u strukture podataka
 
-Prateći materijal uz udžbenik za predmet Strukture podataka.
+Prateći materijal uz udžbenik za predmet Uvod u strukture podataka.
 
 ## Knjiga
 
