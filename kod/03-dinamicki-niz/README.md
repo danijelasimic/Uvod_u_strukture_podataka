@@ -4,11 +4,11 @@ Kod koji prati glavu 3 knjige *Uvod u strukture podataka*.
 
 | Fajl | Sadržaj |
 |---|---|
-| `dinamicki_niz.h` | Šablon klase `DinamickiNiz<T>` — kompletna implementacija iz glave. |
-| `testovi.cpp` | Testovi svih operacija, uključujući ivične slučajeve i kopiranje. |
-| `primer_ucitavanje.cpp` | Primer iz uvoda glave: učitavanje nepoznatog broja podataka. |
-| `cena_dodavanja.cpp` | Eksperimentalna provera amortizovane analize: broj upisa pri aritmetičkoj i geometrijskoj strategiji rasta. |
-| `rast_vektora.cpp` | Ispisuje kojim činiocem raste kapacitet `std::vector` u vašoj standardnoj biblioteci. |
+| [`dinamicki_niz.h`](https://github.com/danijelasimic/Uvod_u_strukture_podataka/blob/main/kod/03-dinamicki-niz/dinamicki_niz.h) | Šablon klase `DinamickiNiz<T>` — kompletna implementacija iz glave. |
+| [`testovi.cpp`](https://github.com/danijelasimic/Uvod_u_strukture_podataka/blob/main/kod/03-dinamicki-niz/testovi.cpp) | Testovi svih operacija, uključujući granične slučajeve i kopiranje. |
+| [`primer_ucitavanje.cpp`](https://github.com/danijelasimic/Uvod_u_strukture_podataka/blob/main/kod/03-dinamicki-niz/primer_ucitavanje.cpp) | Primer iz uvoda glave: učitavanje nepoznatog broja podataka. |
+| [`cena_dodavanja.cpp`](https://github.com/danijelasimic/Uvod_u_strukture_podataka/blob/main/kod/03-dinamicki-niz/cena_dodavanja.cpp) | Eksperimentalna provera amortizovane analize: broj upisa pri aritmetičkoj i geometrijskoj strategiji rasta. |
+| [`rast_vektora.cpp`](https://github.com/danijelasimic/Uvod_u_strukture_podataka/blob/main/kod/03-dinamicki-niz/rast_vektora.cpp) | Ispisuje kako raste kapacitet `std::vector` u standardnoj biblioteci. |
 
 ## Operacije klase
 
@@ -35,7 +35,7 @@ g++ -std=c++17 -Wall -Wextra -pedantic cena_dodavanja.cpp -o cena_dodavanja
 g++ -std=c++17 -Wall -Wextra -pedantic rast_vektora.cpp -o rast_vektora
 ```
 
-Testovi se oslanjaju na `assert`, pa se **ne smeju prevoditi sa `-DNDEBUG`** —
+Testovi se oslanjaju na `assert`, pa se treba biti pažljiv ako se **prevodi sa `-DNDEBUG`** —
 tada se sve provere uklanjaju i program „prolazi“ bez ikakve provere.
 
 Greške u radu sa memorijom (curenje, pristup oslobođenoj memoriji, dvostruko
